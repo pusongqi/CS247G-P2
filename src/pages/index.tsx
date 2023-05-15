@@ -4,6 +4,8 @@ import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import LoginForm from "../../components/LoginForm";
 import Timer from "../../components/Timer";
+import { Button } from "@mui/material";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +24,9 @@ export default function Home() {
       <main className={`${styles.main} ${inter.className}`}>
         <div>
           <Timer />
+          <Link href={"/Journal"}>
+            <Button variant="contained">Journal</Button>
+          </Link>
           <LoginForm />
         </div>
       </main>

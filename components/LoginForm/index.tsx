@@ -32,18 +32,9 @@ function LoginForm(): JSX.Element {
   return (
     <div>
       <div className={styles.title}>Inspect Today, Perfect Tomorrow.</div>
-      {/* <div>
-        <div>User name:</div>
-        <input value={username} onChange={handleChangeUserName}></input>
-      </div> */}
       <div>
-        {/* <div>Password:</div> */}
         <div className={styles.grid}>{renderInputs()}</div>
-        {/* <input value={username} onChange={handleChangeUserName}></input> */}
       </div>
-      {/* <div className={styles.login} onClick={handleLogin}>
-        Login
-      </div> */}
     </div>
   );
 }
