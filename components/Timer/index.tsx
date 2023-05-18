@@ -1,13 +1,11 @@
 import Countdown from "react-countdown";
-import React from "react";
+import styles from "@/styles/Timer.module.css";
 
 function Timer() {
   const Completionist = () => <span>You have disappointed me kid!</span>;
-
   return (
-    <div>
-      <h1>Timer</h1>
-      <Countdown date={Date.now() + 3600000}>
+    <div className={styles.timer}>
+      <Countdown date={Date.now() + 600000}>
         <Completionist />
       </Countdown>
     </div>

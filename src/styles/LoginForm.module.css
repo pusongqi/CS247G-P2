@@ -19,7 +19,7 @@
 .card {
   border-radius: 5px;
   border: 1px solid #ccc;
-  background-color: gold;
+  background-color: rgb(34, 209, 168);
   padding: 2px;
   justify-content: center;
   display: flex;
@@ -27,7 +27,21 @@
 
 .card:hover {
   cursor: pointer;
-  background-color: #ddd;
+  background-color: #1fbce3;
   transform: scale(1.1);
   transition: smooth 0.2s;
+}
+
+.warning {
+  color: red;
+  font-size: 25px;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.timer {
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
 }
