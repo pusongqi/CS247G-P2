@@ -43,9 +43,7 @@ function LoginForm(): JSX.Element {
   return (
     <div>
       <div className={styles.warning}>You have {numberOfTries} tries left</div>
-      <div className={styles.title}>
-        "Inspect Today, Perfect Tomorrow." - Me
-      </div>
+      <div className={styles.title}>"Inspect the Shadow"</div>
       <div>
         <div className={styles.grid}>{renderInputs()}</div>
       </div>
