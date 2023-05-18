@@ -10,9 +10,9 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>Shadow</title>
         <meta
-          name="this is not important"
+          name="Shadow"
           content="(0,3), (Lightning Mcqueen), (5,8), (Cristiano Ronaldo)"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
