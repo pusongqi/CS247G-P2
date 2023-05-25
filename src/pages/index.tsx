@@ -10,17 +10,17 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Shadow</title>
+        <title>My legacy</title>
         <meta
-          name="Shadow"
-          content="(0,3), (Lightning Mcqueen), (5,8), (Cristiano Ronaldo)"
+          name="You have gotten this far, I knew you had the engineering instinct of a Stanford student. But do you also know how the coordinates of the pixels on a browser are different from the coordinates in math?"
+          content="(0,3), (7,11), (5,8), (0,7)"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         <div>
-          <Timer />
+          {/* <Timer /> */}
           <LoginForm />
         </div>
       </main>
