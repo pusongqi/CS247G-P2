@@ -21,10 +21,12 @@ function LoginForm(): JSX.Element {
 
   useEffect(() => {
     if (tries.length === 0) {
-      alert("From Satoshi: you are worthy of my fortune, 9895");
+      alert("From Satoshi: you are worthy of my fortune, the key is 9895");
     }
     if (numberOfTries === 0) {
-      alert("From Satoshi: you are not worthy of my fortune.");
+      alert(
+        "From Satoshi: you have let me down. I will not bestow my fortune upon you.",
+      );
     }
   }, [tries]);
 
@@ -43,7 +45,19 @@ function LoginForm(): JSX.Element {
   return (
     <div>
       <div className={styles.warning}>You have {numberOfTries} tries left</div>
-      <div className={styles.title}>"Inspect the Shadow"</div>
+      <br></br>
+      <div className={styles.journal}>
+        "When I was a student at Stanford, my first ever internship was frontend
+        development. For a whole summer, I worked with HTML and CSS sytle
+        sheets. It was facinating to see infomation getting distributed to
+        people's computers through the internet and how each person could
+        inspect the elements and values on their own browsers. HTML has a
+        specific structure, I took inspiration of that when I deisnged the
+        blockchain so that each block of blockchain has a header that contains
+        the most important infomation and a body that contains the
+        transactions..."
+      </div>
+      <br></br>
       <div>
         <div className={styles.grid}>{renderInputs()}</div>
       </div>

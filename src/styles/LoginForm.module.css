@@ -47,3 +47,11 @@
   font-size: 30px;
   padding: 10px;
 }
+
+.journal {
+  font-size: 1.2rem;
+  font-weight: 450;
+  margin-bottom: 1rem;
+  max-width: 520px;
+  text-align: center;
+}
