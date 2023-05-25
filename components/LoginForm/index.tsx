@@ -6,7 +6,7 @@ import { useEffect } from "react";
 function LoginForm(): JSX.Element {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  let res = ["3", "95", "69", "7"];
+  let res = ["3", "95", "86", "4"];
   const [tries, setTries] = useState(res);
   const [numberOfTries, setNumberOfTries] = useState(5);
 
