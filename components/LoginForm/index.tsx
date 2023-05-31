@@ -21,7 +21,9 @@ function LoginForm(): JSX.Element {
 
   useEffect(() => {
     if (tries.length === 0) {
-      alert("From Satoshi: you are worthy of my fortune, the key is 9895");
+      setTimeout(() => {
+        alert("From Satoshi: you are worthy of my fortune, the key is 9895");
+      }, 300);
     }
     if (numberOfTries === 0) {
       alert(
@@ -42,10 +44,24 @@ function LoginForm(): JSX.Element {
     return inputs;
   }
 
+  function renderGuesses() {
+    const guesses = [];
+    for (let i = 0; i < 4 - tries.length; i++) {
+      guesses.push(<div key={i} className={styles.hint}></div>);
+    }
+    return guesses;
+  }
+
+  function renderPlaceholder() {
+    const holder = [];
+    for (let i = 0; i < 4; i++) {
+      holder.push(<div key={i} className={styles.hintHolder}></div>);
+    }
+    return holder;
+  }
+
   return (
     <div>
-      <div className={styles.warning}>You have {numberOfTries} tries left</div>
-      <br></br>
       <div className={styles.journal}>
         "When I was a student at Stanford, my first ever internship was frontend
         development. For a whole summer, I worked with HTML and CSS sytle
@@ -58,6 +74,14 @@ function LoginForm(): JSX.Element {
         transactions..."
       </div>
       <br></br>
+      <div className={styles.warning}>You have {numberOfTries} tries left</div>
+      <br></br>
+      <div className={styles.centerContainer}>
+        <div className={styles.gridHint}>{renderGuesses()}</div>
+      </div>
+      <div className={styles.centerContainer}>
+        <div className={styles.gridHintHolder}>{renderPlaceholder()}</div>
+      </div>
       <div>
         <div className={styles.grid}>{renderInputs()}</div>
       </div>
