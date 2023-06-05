@@ -6,7 +6,7 @@ import { useEffect } from "react";
 function LoginForm(): JSX.Element {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  let res = ["3", "95", "86", "4"];
+  let res = ["3", "86", "95", "4"];
   const [tries, setTries] = useState(res);
   const [numberOfTries, setNumberOfTries] = useState(5);
 
@@ -22,12 +22,12 @@ function LoginForm(): JSX.Element {
   useEffect(() => {
     if (tries.length === 0) {
       setTimeout(() => {
-        alert("From Satoshi: you are worthy of my fortune, the key is 9895");
+        alert("From Satoshi: you are worthy of my fortune, the key is 048");
       }, 300);
     }
     if (numberOfTries === 0) {
       alert(
-        "From Satoshi: you have let me down. I will not bestow my fortune upon you.",
+        "From Satoshi: you have let me down. I will not bestow my fortune upon you."
       );
     }
   }, [tries]);
@@ -38,7 +38,7 @@ function LoginForm(): JSX.Element {
       inputs.push(
         <div key={i} className={styles.card} onClick={handleClick}>
           {i}
-        </div>,
+        </div>
       );
     }
     return inputs;
