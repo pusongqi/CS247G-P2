@@ -22,7 +22,9 @@ function LoginForm(): JSX.Element {
   useEffect(() => {
     if (tries.length === 0) {
       setTimeout(() => {
-        alert("From Satoshi: you are worthy of my fortune, the key is 048");
+        alert(
+          "From Satoshi: you are worthy of my fortune, the key to my legacy: 048"
+        );
       }, 300);
     }
     if (numberOfTries === 0) {
