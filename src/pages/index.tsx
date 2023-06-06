@@ -13,7 +13,7 @@ export default function Home() {
         <title>My legacy</title>
         <meta
           name="You have gotten this far, I knew you had the engineering instinct of a Stanford student. But do you also know how the coordinates of the pixels on a browser are different from the coordinates in math?"
-          content="(0,3), Satoshi's class year, (11,7), Bitcoin's halfing time"
+          content="(0,3), Satoshi's class year, (11,7), Bitcoin's halfing time, (4,4)"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />

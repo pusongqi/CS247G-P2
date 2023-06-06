@@ -6,7 +6,7 @@ import { useEffect } from "react";
 function LoginForm(): JSX.Element {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  let res = ["3", "86", "95", "4"];
+  let res = ["3", "86", "95", "4", "36"];
   const [tries, setTries] = useState(res);
   const [numberOfTries, setNumberOfTries] = useState(5);
 
@@ -46,7 +46,7 @@ function LoginForm(): JSX.Element {
 
   function renderGuesses() {
     const guesses = [];
-    for (let i = 0; i < 4 - tries.length; i++) {
+    for (let i = 0; i < 5 - tries.length; i++) {
       guesses.push(<div key={i} className={styles.hint}></div>);
     }
     return guesses;
@@ -54,7 +54,7 @@ function LoginForm(): JSX.Element {
 
   function renderPlaceholder() {
     const holder = [];
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 5; i++) {
       holder.push(<div key={i} className={styles.hintHolder}></div>);
     }
     return holder;
