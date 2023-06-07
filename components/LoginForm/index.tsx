@@ -23,13 +23,13 @@ function LoginForm(): JSX.Element {
     if (tries.length === 0) {
       setTimeout(() => {
         alert(
-          "From Satoshi: you are worthy of my fortune, the key to my legacy: 048"
+          "From Satoshi: You are worthy of my fortune. The key to my legacy: 048"
         );
       }, 300);
     }
     if (numberOfTries === 0) {
       alert(
-        "From Satoshi: you have let me down. I will not bestow my fortune upon you."
+        "From Satoshi: You have let me down. I will not bestow my fortune upon you."
       );
     }
   }, [tries]);
