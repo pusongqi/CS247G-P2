@@ -70,7 +70,7 @@ function LoginForm(): JSX.Element {
         sheets. It was facinating to see infomation getting distributed to
         people's computers through the internet and how each person could
         inspect the elements and values on their own browsers. HTML has a
-        specific structure, I took inspiration of that when I deisnged the
+        specific structure and I took inspiration of that when I deisnged the
         blockchain so that each block of blockchain has a header that contains
         the most important infomation and a body that contains the
         transactions..."
